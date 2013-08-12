@@ -53,13 +53,13 @@ yearfield.options[0]=new Option(today.getFullYear(), today.getFullYear(), true, 
 
 <body>
 	<div class="container">
-            <header>
+            <header class="grid_12">
                 <img src="images/png/logo.png" alt="Eric's Pet Services, Inc." />
                 <h1>Eric's Pet Services</h1>
                 Proudly serving the Broward County area of South Florida.
             </header>
             
-            <nav>
+            <nav class="grid_12">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
@@ -70,99 +70,22 @@ yearfield.options[0]=new Option(today.getFullYear(), today.getFullYear(), true, 
                 </ul>
             </nav>
         
-        <div id="main">
-        	<div id="gallery">
+        <div id="main" class="grid_9 alpha">
+        	<div id="gallery" class="grid_9">
                 <img src="images/jpg/dog-hamster.jpg" alt="dog and hamster friends">
-                <img src="images/jpg/kitten.jpg" alt="kitten in a basket">
-                <img src="images/jpg/puppies.jpg" alt="puppies">
             </div>
-            <div id="cta">
-            	<h2>Don't wait! book a "face-2-face" today!</h2>
-                <p>Our Face-2-Face program is a fun, relaxing way for our Animal Care Associates to meet with you and your beloved pet(s).  Fill out the form below and we will get in touch with you to confirm your appointment.  To make things even easier, we'll come to you.  When you are contacted on of our associates will work out directions and get an address for your home or other meeting spot of your choice.</p>
-                <form id="booking" method="post" action="#">
-                <fieldset>
-                    <legend>Personal Information</legend>
-                    <div>  
-                        <label for="first-name">First Name </label>
-                        <input type="text" name="first-name" id="first-name"/> 
-                    </div> 
-                    <div>
-                        <label for="last-name">Last Name </label>
-                        <input type="text" name="last-name" id="last-name"/> 
-                    </div> 
-                    <div>
-                        <label for="email">Email </label>
-                        <input type="email" name="email" id="email"/> 
-                    </div> 
-                    <div>
-                    	<label for="phone">Phone</label>
-                        <input type="tel" name="phone" id="phone"/>
-                    </div>
-                    </fieldset>
-                    
-                    <fieldset>
-                    	<legend>Booking Information</legend>
-                        <div>
-                            <label>When would you like to meet? </label>
-                            <select id="daydropdown">
-                            </select> 
-                            <select id="monthdropdown">
-                            </select> 
-                            <select id="yeardropdown">
-                            </select> 
-                        </div> 
-						<div>
-                            <label for="time">What time of day is best?</label>
-                            <select name="time" id="time"> 
-                                <option>Morning 8a-12p</option>
-                                <option>Afternoon 12p-5p</option>
-                                <option>Evening 5p-9p</option>
-                            </select>
-                            <script type="text/javascript">
-								//populatedropdown(id_of_day_select, id_of_month_select, id_of_year_select)
-								window.onload=function(){
-								populatedropdown("daydropdown", "monthdropdown", "yeardropdown")
-								}
-							</script>
-                        </div> 
-                    </fieldset>
-                        
-                    <fieldset>
-                     	<legend>About Your Pet(s)</legend>
-                        <div>                    
-                            <label for="dog">How many dogs do you have? </label>
-                            <select name="dog" id="dog"> 
-                            	<option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5+</option>
-                            </select>
-                        </div> 
-                        <div>
-                            <label for="cat">How many cats do you have? </label>
-                            <select name="cat" id="cat"> 
-                            	<option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5+</option>
-                            </select>
-                        </div>
-                        <div>
-                        	<label for="other">If you have other pets that require care please list them here.</label>
-                            <textarea rows="5" cols="30" name="other" id="other"></textarea>
-                        </div>
-                        <div id="button-container">
-                        	<p>We look forward to meeting you! We will contact you within 48 hours to confirm your appointment.</p>
-                            <input id="submit-button" type="submit" name="submit" value="Book Now" />
-                        </div>
-                    </fieldset>
-                </form>	
+            <div id="col1" class="grid_3 alpha">
+            	Dog Walking
+            </div>
+            <div id="col2" class="grid_3">
+            	Pet Sitting
+            </div>
+            <div id="col3" class="grid_3 omega">
+            	Book Now
             </div>
         </div>
         
-        <aside>
+        <aside class="grid_3 omega">
         	<h3>See what people are saying about us</h3>
             <a href="http://www.angieslist.com/default.aspx" target="_blank"><img src="images/gif/angies-list.gif" alt="erics pet services angies list reviews"></a>
             <a href="http://www.facebook.com/ericspetervices" target="_blank"><img src="images/png/facebook.png" alt="erics pet services facebook page"></a>
@@ -177,7 +100,7 @@ yearfield.options[0]=new Option(today.getFullYear(), today.getFullYear(), true, 
             
         </aside>
         
-        <footer>
+        <footer class="grid_12">
         	Copyright Eric's Pet Services, Inc. &copy; 2013- All Rights Reserved. 
         </footer>
     </div><!-- container -->
