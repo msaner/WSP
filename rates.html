@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Eric's Rates</title>
+</head>
+
+<body>
+<div id="container">
+    <header>
+        <img src="images/png/logo.png" alt="Eric's Pet Services, Inc." />
+        <h1>Eric's Pet Services</h1>
+        Proudly serving the Broward County area of South Florida.
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="dog-walking.php">Dog Walking</a></li>
+            <li><a href="pet-sitting.php">Pet Sitting</a></li>
+            <li><a href="rates.php">Our Rates</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+	<div id="main">
+    	<table id="rates">
+        <tr>
+            <th>Dog Walking</th>
+            <th>Pet Visits</th>
+            <th>Pet Sitting</th>
+            <th>Shuttle Service</th>
+        </tr>
+        <tr>
+            <td>
+                <h3>Included Services</h3>
+                <ul>
+                    <li>exercise</li>
+                    <li>play time</li>
+                    <li>fill food and water bowls</li>
+                    <li>picture updates to you via email or text</li>
+                </ul>
+            </td>
+            <td>
+                <h3>Included Services</h3>
+                <ul>
+                    <li>exercise</li>
+                    <li>play time</li>
+                    <li>fill food and water bowls</li>
+                    <li>picture updates to you via email or text</li>
+                    <li>clean up pet waste</li>
+                    <li>bring in mail and newspaper</li>
+                    <li>water house plants</li>
+                </ul>
+            </td>
+			<td>
+                <h3>Included Services</h3>
+                <ul>
+                	<li>live-in care</li>
+                    <li>daily exercise</li>
+                    <li>daily play time</li>
+                    <li>fill food and water bowls</li>
+                    <li>daily picture updates to you via email or text</li>
+                    <li>clean up pet waste</li>
+                    <li>bring in mail and newspaper</li>
+                    <li>water house plants</li>
+                </ul>
+            </td>
+			<td>
+            	<h3>Let us take you to the Airport or Cruise Port</h3>
+                <ul>
+                	<li>To Ft. Lauderdale or Port Everglades - $30</li>
+                    <li>To Miami or West Palm Beach - $60</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Only $17 per day</td>
+            <td>Best Deal! $51 per day<br>Includes 3 visits per day</td>
+            <td>Only $70 per night</td>
+        </tr>
+        </table>
+        
+                	
+        </table>
+    
+		<h2>Don't wait book today!</h2>
+        <form id="booking" method="post" action="#">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div>  
+                    <label for="first-name">First Name </label>
+                    <input type="text" name="first-name" id="first-name"/> 
+                </div> 
+                <div>
+                    <label for="last-name">Last Name </label>
+                    <input type="text" name="last-name" id="last-name"/> 
+                </div> 
+                <div>
+                    <label for="email">Email </label>
+                    <input type="email" name="email" id="email"/> 
+                </div> 
+                <div>
+                    <label for="phone">Phone</label>
+                    <input type="tel" name="phone" id="phone"/>
+                </div>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Booking Information</legend>
+                    <div>
+                        <label>When would you like to meet? </label>
+                        <select id="daydropdown">
+                        </select> 
+                        <select id="monthdropdown">
+                        </select> 
+                        <select id="yeardropdown">
+                        </select> 
+                    </div> 
+                    <div>
+                        <label for="time">What time of day is best?</label>
+                        <select name="time" id="time"> 
+                            <option>Morning 8a-12p</option>
+                            <option>Afternoon 12p-5p</option>
+                            <option>Evening 5p-9p</option>
+                        </select>
+                        <script type="text/javascript">
+                            //populatedropdown(id_of_day_select, id_of_month_select, id_of_year_select)
+                            window.onload=function(){
+                            populatedropdown("daydropdown", "monthdropdown", "yeardropdown")
+                            }
+                        </script>
+                    </div> 
+                </fieldset>
+                    
+                <fieldset>
+                    <legend>About Your Pet(s)</legend>
+                    <div>                    
+                        <label for="dog">How many dogs do you have? </label>
+                        <select name="dog" id="dog"> 
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5+</option>
+                        </select>
+                    </div> 
+                    <div>
+                        <label for="cat">How many cats do you have? </label>
+                        <select name="cat" id="cat"> 
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5+</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="other">If you have other pets that require care please list them here.</label>
+                        <textarea rows="5" cols="30" name="other" id="other"></textarea>
+                    </div>
+                    <div id="button-container">
+                        <p>We look forward to meeting you! We will contact you within 48 hours to confirm your appointment.</p>
+                        <input id="submit-button" type="submit" name="submit" value="Book Now" />
+                    </div>
+                </fieldset>
+            </form>	
+
+	</div><!-- main -->
+    <aside>
+        <h3>See what people are saying about us</h3>
+        <a href="http://www.angieslist.com/default.aspx" target="_blank"><img src="images/gif/angies-list.gif" alt="erics pet services angies list reviews"></a>
+        <a href="http://www.facebook.com/ericspetervices" target="_blank"><img src="images/png/facebook.png" alt="erics pet services facebook page"></a>
+        <a href="http://www.yelp.com/biz/erics-pet-services-inc-margate-2" target="_blank"><img src="images/png/yelp.png" alt="erics pet services yelp account"></a>
+        
+        <h3>pet care you can trust</h3>
+        <p>Insured and Bonded to ensure peace of mind.</p>
+        <a href="https://www.petsit.com/" target="_blank"><img src="images/png/pet-sitter-international.png" alt="pet sitters international logo"></a>
+        
+        <p>Featured on WPLG Top 10 list</p>
+        <a href="http://vote.local10.com/place/20413-erics-pet-services-inc" target="_blank"><img src="images/png/toptenlogo.png" alt="WPLG local 10 logo"></a>
+        
+    </aside>
+    
+    <footer>
+        Copyright Eric's Pet Services, Inc. &copy; 2013- All Rights Reserved. 
+    </footer>
+</div><!-- container -->
+
+</body>
+</html>
