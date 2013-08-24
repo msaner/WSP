@@ -15,24 +15,44 @@ Copyright 2013, Josh Cope
    Site Styles - Gobal Styles 
    ========================================================================== */
 
-.container {
-	background-color:#fdefbe;
-	overflow:hidden;
+h1 {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-weight:bold;
+	text-transform:uppercase;
+	font-size:20px;
+	color:#477725;
 }
 
+h2 {
+	font-family: 'Happy Monkey', cursive;
+	font-size:18px;
+	color:#de5400;
+}
+	
 h3 {
 	font-family: 'Belleza', sans-serif;
-	text-transform:uppercase;
+	text-transform:capitalize;
 	color:#477725;
-	text-shadow: 1px 1px 3px #477725;
-	filter: dropshadow(color=#477725, offx=1, offy=1);
+}
+
+a {
+	color:#de5400;
+	text-decoration:none;
+}
+
+a:hover {
+	text-decoration:underline;
 }
 
 /* --- BEGIN HEAD SECTION STYLES --- */
 header {
-	height: 115px;
-	padding: 10px;
-	background: url(../images/jpg/header-bg.jpg) repeat-x;
+	height: 97px;
+	background: url(../images/jpg/header-bg.jpg) repeat;
+}
+
+#logo {
+	height:77px;
+	padding:10px 0px 10px 0px;
 }
 
 #head-shadow {
@@ -40,13 +60,6 @@ header {
 	background:url(../images/png/asideBG.png) repeat-x;
 	position:relative;
 	z-index:10;
-	margin-left:auto;
-	margin-right:auto;
-	padding: 0px 10px 0px 10px;
-}
-
-#logo {
-	float:left;
 }
 
 nav, nav ul, nav li, nav a {
@@ -59,16 +72,7 @@ nav, nav ul, nav li, nav a {
 }
 		
 nav {
-	position:relative;
-	top:65px;
-	left:67px;
 	background: #a7bc7a;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
-	border: 1px solid #839b4e;
-	-moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
-	-webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
 }
 
@@ -97,22 +101,17 @@ nav li {
 
 nav li:first-child {
 	border-left: none;
-	-webkit-border-radius: 4px 0 0 4px;
-	-moz-border-radius: 4px 0 0 4px;
-	border-radius: 4px 0 0 4px;
 }
 /* --- END HEAD SECTION STYLES --- */
 
 .main {
+	text-align:center;
 }
 
 /* --- ASIDE (RIGHT COLUMN) STYLES --- */
 aside {
-	overflow:hidden;
-	padding:10px;
 	background:url(../images/jpg/asideBG.jpg) repeat-y;
 	text-align:center;
-	margin-bottom:5px;
 }
 
 #social-media-buttons {
@@ -133,6 +132,7 @@ footer {
 	background:url(../images/jpg/footer-grass.jpg);
 	height:20px;
 	padding:10px;
+	clear:left;
 }
 
 footer p {
@@ -156,6 +156,55 @@ footer p {
 	left:0; 
 	top:0; 
 }
+
+.advert {
+	margin-top:20px;
+}
+
+.advert a:hover {
+	zoom: 1;
+	filter: alpha(opacity=50);
+	opacity: 0.8;
+}
+
+/* --- ABOUT PAGE --- */
+.left-justify {
+	text-align:left;
+}
+
+#about img {
+	float:left;
+	padding:0px 15px 0px 0px;
+}
+
+#about p span {
+	font-size:12px;
+}
+
+.quote {
+	font-size:12px;
+	text-align:center;
+}
+
+/* --- DOG-WALKING PAGE --- */
+
+#walking img {
+	float:left;
+	padding:0px 15px 0px 0px;
+}
+
+#visits {
+	clear:left;
+	padding-top:15px;
+}
+
+#visits img {
+	float:left;
+	padding:0px 15px 0px 0px;
+}
+
+
+
 
 /* =============================================================================
    Media Queries
