@@ -186,9 +186,9 @@ footer p {
 	text-align:center;
 }
 
-/* --- DOG-WALKING PAGE --- */
+/* --- DOG-WALKING & PET SITTING PAGES --- */
 
-#walking img {
+#walking img, #pet-sitting img {
 	float:left;
 	padding:0px 15px 0px 0px;
 }
@@ -203,9 +203,66 @@ footer p {
 	padding:0px 15px 0px 0px;
 }
 
+/* --- RATES PAGE --- */
+#form-container {
+	font-size:14px;
+}
 
+#form-container h3 {
+	padding:15px 0px;
+}
 
+#booking fieldset div {
+	padding-bottom:5px;
+}
 
+.input {    
+	border: 1px solid #de5400; 
+
+}
+
+.myButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #f2dcd0;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #f2dcd0;
+	box-shadow:inset 0px 1px 0px 0px #f2dcd0;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffd0a6), color-stop(1, #ff7700));
+	background:-moz-linear-gradient(top, #ffd0a6 5%, #ff7700 100%);
+	background:-webkit-linear-gradient(top, #ffd0a6 5%, #ff7700 100%);
+	background:-o-linear-gradient(top, #ffd0a6 5%, #ff7700 100%);
+	background:-ms-linear-gradient(top, #ffd0a6 5%, #ff7700 100%);
+	background:linear-gradient(to bottom, #ffd0a6 5%, #ff7700 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd0a6', endColorstr='#ff7700',GradientType=0);
+	background-color:#ffd0a6;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #de5500;
+	display:inline-block;
+	color:#fdefbe;
+	font-family:arial;
+	font-size:16px;
+	font-weight:bold;
+	padding:8px 15px;
+	text-decoration:none;
+	text-shadow:0px 1px 3px #000326;
+}
+	
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ff7700), color-stop(1, #ffd0a6));
+	background:-moz-linear-gradient(top, #ff7700 5%, #ffd0a6 100%);
+	background:-webkit-linear-gradient(top, #ff7700 5%, #ffd0a6 100%);
+	background:-o-linear-gradient(top, #ff7700 5%, #ffd0a6 100%);
+	background:-ms-linear-gradient(top, #ff7700 5%, #ffd0a6 100%);
+	background:linear-gradient(to bottom, #ff7700 5%, #ffd0a6 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff7700', endColorstr='#ffd0a6',GradientType=0);
+	background-color:#ff7700;
+}
+	
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+	
 /* =============================================================================
    Media Queries
    ========================================================================== */
