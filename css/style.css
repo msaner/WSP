@@ -1,6 +1,4 @@
 
-/* CONTACT PAGE */
-
 #frame {
 	margin:0;
 	border:0;
@@ -14,11 +12,135 @@ Copyright 2013, Josh Cope
 */
 
 /* =============================================================================
-   Site Styles
+   Site Styles - Gobal Styles 
    ========================================================================== */
-nav li {
-	display:inline;
+
+.container {
+	background-color:#fdefbe;
+	overflow:hidden;
 }
+
+h3 {
+	font-family: 'Belleza', sans-serif;
+	text-transform:uppercase;
+	color:#477725;
+	text-shadow: 1px 1px 3px #477725;
+	filter: dropshadow(color=#477725, offx=1, offy=1);
+}
+
+/* --- BEGIN HEAD SECTION STYLES --- */
+header {
+	height: 115px;
+	padding: 10px;
+	background: url(../images/jpg/header-bg.jpg) repeat-x;
+}
+
+#head-shadow {
+	height: 8px;
+	background:url(../images/png/asideBG.png) repeat-x;
+	position:relative;
+	z-index:10;
+	margin-left:auto;
+	margin-right:auto;
+	padding: 0px 10px 0px 10px;
+}
+
+#logo {
+	float:left;
+}
+
+nav, nav ul, nav li, nav a {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 14px;
+	line-height: 1;
+}
+		
+nav {
+	position:relative;
+	top:65px;
+	left:67px;
+	background: #a7bc7a;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	border: 1px solid #839b4e;
+	-moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+nav a {
+	padding: 15px 20px;
+	display: block;
+	text-decoration: none;
+	color: #ffffff;
+	text-shadow: 0 -1px 1px #586835;
+	border-right: 1px solid #839b4e;
+}
+
+nav a:hover {
+	color: #586835;
+	text-shadow: 0 1px 1px #bdcd9c;
+}
+
+nav li {
+	float: left;
+	border-right: 1px solid #b2c58b;
+}
+
+.active {
+	background: url(../images/png/grass.png) bottom repeat-x;
+}
+
+nav li:first-child {
+	border-left: none;
+	-webkit-border-radius: 4px 0 0 4px;
+	-moz-border-radius: 4px 0 0 4px;
+	border-radius: 4px 0 0 4px;
+}
+/* --- END HEAD SECTION STYLES --- */
+
+.main {
+}
+
+/* --- ASIDE (RIGHT COLUMN) STYLES --- */
+aside {
+	overflow:hidden;
+	padding:10px;
+	background:url(../images/jpg/asideBG.jpg) repeat-y;
+	text-align:center;
+	margin-bottom:5px;
+}
+
+#social-media-buttons {
+	padding-top: 20px;
+}
+
+aside p {
+	margin:0px 0px 10px 0px;
+	font-size:0.938em;
+}
+
+#local10 {
+	padding:10px 0px 20px 0px;
+}
+
+/* --- FOOTER --- */
+footer {
+	background:url(../images/jpg/footer-grass.jpg);
+	height:20px;
+	padding:10px;
+}
+
+footer p {
+	color:#A8BC72;
+	margin:0px;
+	line-height:30px;
+}
+
 /* =============================================================================
    Page Styles
    ========================================================================== */
