@@ -17,7 +17,6 @@
 <link rel="stylesheet" href="css/grid.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/demo.css">
-<link rel="stylesheet" href="css/slideshow-style.css" />
 
 <!-- webfonts -->
 <link href='http://fonts.googleapis.com/css?family=Belleza' rel='stylesheet' type='text/css'>
@@ -53,6 +52,19 @@ yearfield.options[0]=new Option(today.getFullYear(), today.getFullYear(), true, 
 }
 
 </script>
+
+<script>
+	$(function(){
+		$('.fadein img:gt(0)').hide();
+		setInterval(function(){
+			$('.fadein :first-child').fadeOut()
+			.next('img').fadeIn()
+		.end().appendTo('.fadein');}, 
+		3000);
+	});
+</script>
+
+
 </head>
 
 <body>
@@ -73,24 +85,12 @@ yearfield.options[0]=new Option(today.getFullYear(), today.getFullYear(), true, 
 		<div id="head-shadow" class="grid_12"></div>
             
 		<div class="main grid_9 alpha">
-			<div id="slideshow" class="rs-slideshow grid_9">
-				<div class="slide-container">
-					<img src="images/jpg/dog-hamster.jpg" alt="dog and hamster friends" />
-					<span class="slide-caption">Welcome to Eric's Pet Services!</span>
-				</div>
-				<ol class="slides">
-					<li>
-						<a href="images/jpg/dog-hamster.jpg" title="dog and hamster friends"></a>
-					</li>
-					<li>
-						<a href="images/jpg/kitten.jpg" title="little kitten"></a>
-					</li>
-					<li>
-						<a href="images/jpg/puppies.jpg" title="two cute puppies"></a>
-					</li>
-				</ol>
-			</div>        	
-        
+            <div class="fadein">
+                  <img src="images/jpg/kitten.jpg" alt="cute kitten">
+                  <img src="images/jpg/dog-hamster.jpg" alt="hamster and dog">
+                  <img src="images/jpg/puppies.jpg" alt="puppies">
+            </div>     
+                   
             <div id="col1" class="grid_3 alpha">
                 Dog Walking
             </div>
@@ -122,11 +122,7 @@ yearfield.options[0]=new Option(today.getFullYear(), today.getFullYear(), true, 
         	<p>Copyright Eric's Pet Services, Inc. &copy; 2013- All Rights Reserved. </p>
         </footer>
     </div><!-- container -->
-<!-- slideshow scripts -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-		<script src="js/jquery.rs.slideshow.js"></script>
-		<script src="js/bootstrap.js"></script>
-<!-- END slideshow scripts -->    
+    
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 <script src="js/scripts.js"></script>
 </body>
