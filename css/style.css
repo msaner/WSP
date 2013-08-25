@@ -1,10 +1,4 @@
 
-#frame {
-	margin:0;
-	border:0;
-	width:400px;
-	height:400px;
-}
 
 /*
 Responsive 996px grid system ~ Style CSS.
@@ -19,13 +13,13 @@ h1 {
 	font-family:Georgia, "Times New Roman", Times, serif;
 	font-weight:bold;
 	text-transform:uppercase;
-	font-size:20px;
+	font-size:1.250em /*20px*/;
 	color:#477725;
 }
 
 h2 {
 	font-family: 'Happy Monkey', cursive;
-	font-size:18px;
+	font-size:1.125em /*18px*/;
 	color:#de5400;
 }
 	
@@ -51,7 +45,6 @@ header {
 }
 
 #logo {
-	height:77px;
 	padding:10px 0px 10px 0px;
 }
 
@@ -59,6 +52,7 @@ header {
 	height: 8px;
 	background:url(../images/png/asideBG.png) repeat-x;
 	position:relative;
+	clear:left;
 	z-index:10;
 }
 
@@ -67,7 +61,7 @@ nav, nav ul, nav li, nav a {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 14px;
+	font-size: 0.938em /*14px*/;
 	line-height: 1;
 }
 		
@@ -205,7 +199,7 @@ footer p {
 
 /* --- RATES PAGE --- */
 #form-container {
-	font-size:14px;
+	font-size:0.875em/*14px*/;
 }
 
 #form-container h3 {
@@ -263,15 +257,105 @@ footer p {
 	top:1px;
 }
 	
+#rates {
+	width:100%;
+	margin-top:20px;
+}
+
+.center {
+	text-align:center;
+}
+	
+#rates tr td {
+	vertical-align:top;
+	border:#477725 2px solid;
+}
+
+#rates tr td ul li {
+	list-style-type:none;
+	background:url(../images/png/paw-print.png) no-repeat center left;
+	height:14px;
+	padding:10px 0px 5px 20px;
+	line-height:1;
+}
+
+.lt-green {
+	background-color:#c3cc85;
+
+}
+
+.drk-green {
+	background-color:#477725;
+}
+
+.drk-green h1, .drk-green h2 {
+	text-transform:uppercase;
+	text-shadow:1px 1px 1px #C4CC7C;
+}
+
+#left {
+	text-align:left}
+
+/* --- contact page --- */
+#frame {
+	margin:0;
+	border:0;
+	width:400px;
+	height:400px;
+}
+
 /* =============================================================================
    Media Queries
    ========================================================================== */
 
 /* Tablet Portrait size to Base 996px */
-@media only screen and (min-width: 768px) and (max-width: 995px) {}
+@media only screen and (min-width: 768px) and (max-width: 995px) {
+	nav { background:#a7bc7a; }
+	nav a { padding: 10px; display:block; color:#fff; text-decoration:none; }
+	na li { float:left; }
+	h1 { font-size:1em; }
+	h2 {font-size:1em; }
+	body {font-size:0.938em; }
+}
 
 /* All Mobile Sizes */
-@media only screen and (max-width: 767px) {}
+@media only screen and (max-width: 767px) {
+	#head-shadow { display:none; }
+	#logo { height:40px; }
+nav, nav ul, nav li, nav a {
+	list-style: none;
+	font-size: 0.938em /*14px*/;
+	line-height: 1;
+}
+		
+nav {
+	background: #a7bc7a;
+}
+nav a {
+	padding: 5px 5px;
+	display: block;
+	text-decoration: none;
+	color: #ffffff;
+	text-shadow:none;
+	border-right: none;
+}
+nav a:hover {
+	color: #586835;
+	text-shadow:none;
+}
+nav li {
+	float: left;
+	border-right:none;
+}
+.active {
+	background:url(../images/png/grass.png) bottom repeat-x;
+	color:#586835;
+}
+nav li:first-child {
+	border-left: none;
+}
+.main { margin-top:20px; }
+}
 
 /* Mobile Landscape Size to Tablet Portrait */
 @media only screen and (min-width: 480px) and (max-width: 767px) {}
