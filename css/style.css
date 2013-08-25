@@ -99,7 +99,7 @@ nav li:first-child {
 /* --- END HEAD SECTION STYLES --- */
 
 .main {
-	text-align:center;
+	text-align:left;
 }
 
 /* --- ASIDE (RIGHT COLUMN) STYLES --- */
@@ -156,8 +156,6 @@ footer p {
 }
 
 .advert a:hover {
-	zoom: 1;
-	filter: alpha(opacity=50);
 	opacity: 0.8;
 }
 
@@ -225,7 +223,6 @@ footer p {
 	background:-o-linear-gradient(top, #ffd0a6 5%, #ff7700 100%);
 	background:-ms-linear-gradient(top, #ffd0a6 5%, #ff7700 100%);
 	background:linear-gradient(to bottom, #ffd0a6 5%, #ff7700 100%);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd0a6', endColorstr='#ff7700',GradientType=0);
 	background-color:#ffd0a6;
 	-moz-border-radius:6px;
 	-webkit-border-radius:6px;
@@ -248,7 +245,6 @@ footer p {
 	background:-o-linear-gradient(top, #ff7700 5%, #ffd0a6 100%);
 	background:-ms-linear-gradient(top, #ff7700 5%, #ffd0a6 100%);
 	background:linear-gradient(to bottom, #ff7700 5%, #ffd0a6 100%);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff7700', endColorstr='#ffd0a6',GradientType=0);
 	background-color:#ff7700;
 }
 	
@@ -268,7 +264,7 @@ footer p {
 	
 #rates tr td {
 	vertical-align:top;
-	border:#477725 2px solid;
+ padding:0;
 }
 
 #rates tr td ul li {
@@ -339,7 +335,7 @@ footer p {
 	aside p, aside h3 { display:none; }
 	#angie-list {width:20%; margin-top:30px; }
 	.main img {width:50%; }
-	#rates tr td ul li { list-style-type:disc; background:none;}
+	#rates tr td ul li { list-style-type:disc; background:none; float:left; }
 	tr td {font-size:0.750em; }
 	#rates ul {list-style-position:inside; padding:0px; }
 	.drk-green h1, .drk-green h2 { text-transform:uppercase; text-shadow:none; }
