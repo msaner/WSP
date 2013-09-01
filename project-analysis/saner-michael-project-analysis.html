@@ -1,0 +1,111 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width">
+
+<title>Eric's Pet Services</title>
+
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/grid.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/demo.css">
+
+<script src="js/modernizr-2.6.2.min.js"></script>
+<script type="text/javascript">
+
+/***********************************************
+* Drop Down Date select script- by JavaScriptKit.com
+* This notice MUST stay intact for use
+* Visit JavaScript Kit at http://www.javascriptkit.com/ for this script and more
+***********************************************/
+
+var monthtext=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sept','Oct','Nov','Dec'];
+
+function populatedropdown(dayfield, monthfield, yearfield){
+var today=new Date()
+var dayfield=document.getElementById(dayfield)
+var monthfield=document.getElementById(monthfield)
+var yearfield=document.getElementById(yearfield)
+for (var i=0; i<31; i++)
+dayfield.options[i]=new Option(i, i+1)
+dayfield.options[today.getDate()]=new Option(today.getDate(), today.getDate(), true, true) //select today's day
+for (var m=0; m<12; m++)
+monthfield.options[m]=new Option(monthtext[m], monthtext[m])
+monthfield.options[today.getMonth()]=new Option(monthtext[today.getMonth()], monthtext[today.getMonth()], true, true) //select today's month
+var thisyear=today.getFullYear()
+for (var y=0; y<20; y++){
+yearfield.options[y]=new Option(thisyear, thisyear)
+thisyear+=1
+}
+yearfield.options[0]=new Option(today.getFullYear(), today.getFullYear(), true, true) //select today's year
+}
+
+</script>
+</head>
+
+<body>
+	<div class="container">
+            <header class="grid_12">
+                <img src="images/png/logo.png" alt="Eric's Pet Services, Inc." />
+                <h1>Eric's Pet Services</h1>
+                Proudly serving the Broward County area of South Florida.
+            </header>
+            
+            <nav class="grid_12">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="dog-walking.html">Dog Walking</a></li>
+                    <li><a href="pet-sitting.html">Pet Sitting</a></li>
+                    <li><a href="rates.html">Our Rates</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        
+        <div id="main" class="grid_9 alpha">
+        	<div id="gallery" class="grid_9">
+                <img src="images/jpg/dog-hamster.jpg" alt="dog and hamster friends">
+            </div>
+            <div id="col1" class="grid_3 alpha">
+            	Dog Walking
+            </div>
+            <div id="col2" class="grid_3">
+            	Pet Sitting
+            </div>
+            <div id="col3" class="grid_3 omega">
+            	Book Now
+            </div>
+        </div>
+        
+        <aside class="grid_3 omega">
+        	<h3>See what people are saying about us</h3>
+            <a href="http://www.angieslist.com/default.aspx" target="_blank"><img src="images/gif/angies-list.gif" alt="erics pet services angies list reviews"></a>
+            <a href="http://www.facebook.com/ericspetervices" target="_blank"><img src="images/png/facebook.png" alt="erics pet services facebook page"></a>
+            <a href="http://www.yelp.com/biz/erics-pet-services-inc-margate-2" target="_blank"><img src="images/png/yelp.png" alt="erics pet services yelp account"></a>
+            
+        	<h3>pet care you can trust</h3>
+            <p>Insured and Bonded to ensure peace of mind.</p>
+            <a href="https://www.petsit.com/" target="_blank"><img src="images/png/pet-sitter-international.png" alt="pet sitters international logo"></a>
+            
+            <p>Featured on WPLG Top 10 list</p>
+            <a href="http://vote.local10.com/place/20413-erics-pet-services-inc" target="_blank"><img src="images/png/toptenlogo.png" alt="WPLG local 10 logo"></a>
+            
+        </aside>
+        
+        <footer class="grid_12">
+        	Copyright Eric's Pet Services, Inc. &copy; 2013- All Rights Reserved. 
+        </footer>
+    </div><!-- container -->
+    
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>

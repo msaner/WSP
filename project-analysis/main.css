@@ -1,0 +1,108 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html, h1 {
+	margin:0;
+	padding:0;
+}
+
+body { 
+	background:url(images/jpg/blue-texture.jpg);
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	padding:0;
+	margin:0;
+}
+
+h1 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #0CC;
+}
+
+h2 {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color:#930;
+}
+
+h3 {
+	font-size:18px;
+	text-transform:uppercase;
+}
+
+#container {
+	width:960px;
+	background:#FFF;
+	margin:0px auto;
+}
+
+header {
+	text-align:center;
+	padding-top:20px;
+	border-bottom:#0CF solid 3px;
+}
+
+#main-content {
+	padding:20px;
+}
+
+/* SITE INTENT SECTION */
+
+#intent {
+	padding:15px 0px;
+	border-bottom: #0CF solid 3px;
+}
+
+/* COMPETITIVE ANALYSIS SECTION */
+
+#analysis {
+	padding:15px 0px;
+	border-bottom: #0CF solid 3px;
+}
+
+#analysis p img {
+	display:block;
+}
+
+.site-compare {
+	border-collapse:collapse;
+}
+
+#site-compare td {
+	border:#0CF solid 1px;
+	margin:0;
+	padding:5px;
+}
+
+.shade {
+	width:130px;
+	font-weight:bold;
+	background:#CFF;
+}
+
+#site-stats {
+	width:780px;
+	text-align:center;
+}
+
+#site-stats tr td {
+	border:none;
+}
+
+/* TARGET AUDIENCE SECTION */
+
+#target {
+	padding:15px 0px;
+	overflow:hidden;
+}
+
+.audience-info {
+	padding-bottom:15px;
+	overflow:hidden;
+}
+
+.audience-info img {
+	float:left;
+	padding:20px 10px 0px 0px;
+}
